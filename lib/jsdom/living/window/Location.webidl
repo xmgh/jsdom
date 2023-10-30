@@ -13,7 +13,8 @@ interface Location { // but see also additional creation steps and overridden in
 
   [LegacyUnforgeable] undefined assign(USVString url);
   [LegacyUnforgeable] undefined replace(USVString url);
-  [LegacyUnforgeable] undefined reload();
+//  [LegacyUnforgeable] undefined reload();
+  [SameObject] undefined reload();
 
 //  [LegacyUnforgeable, SameObject] readonly attribute DOMStringList ancestorOrigins;
 };
